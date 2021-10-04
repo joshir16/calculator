@@ -1,0 +1,133 @@
+/** @format */
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+:root {
+  transition: all 0.3s; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 28.75em) {
+    html {
+      font-size: 43.75%; } }
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  background-color: #c954a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; }
+
+/** @format */
+.container {
+  max-width: 50rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: 9px 9px 18px #793262, -9px -9px 18px #ff76e6; }
+
+.display {
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: #793262;
+  box-shadow: inset 7px 7px 14px #552345, inset -7px -7px 14px #9d417f;
+  color: #f5f5f5;
+  margin: 1rem;
+  margin-bottom: 3rem; }
+  .display__text {
+    font-size: 2.75rem;
+    text-align: right; }
+  .display__result {
+    font-size: 3.5rem; }
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "plus subtract multiply divide" "seven eight nine clear" "four five six equal" "one two three equal" "d-zero zero decimal equal"; }
+
+.btn {
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+  transition: 0.3s ease-in;
+  cursor: pointer; }
+  .btn--1 {
+    grid-area: one; }
+  .btn--2 {
+    grid-area: two; }
+  .btn--3 {
+    grid-area: three; }
+  .btn--4 {
+    grid-area: four; }
+  .btn--5 {
+    grid-area: five; }
+  .btn--6 {
+    grid-area: six; }
+  .btn--7 {
+    grid-area: seven; }
+  .btn--8 {
+    grid-area: eight; }
+  .btn--9 {
+    grid-area: nine; }
+  .btn--0 {
+    grid-area: zero; }
+  .btn--00 {
+    grid-area: d-zero; }
+  .btn--decimal {
+    grid-area: decimal; }
+  .btn--plus {
+    grid-area: plus; }
+  .btn--subtract {
+    grid-area: subtract; }
+  .btn--multiply {
+    grid-area: multiply; }
+  .btn--divide {
+    grid-area: divide; }
+  .btn--equal {
+    grid-area: equal;
+    background-color: #ae2d85;
+    box-shadow: 5px 5px 10px #681b50, -5px -5px 10px #f43fba; }
+    .btn--equal:active {
+      box-shadow: inset 5px 5px 10px #681b50, inset -5px -5px 10px #f43fba; }
+  .btn--clear {
+    grid-area: clear;
+    background-color: #ae2d85;
+    box-shadow: 5px 5px 10px #681b50, -5px -5px 10px #f43fba; }
+    .btn--clear:active {
+      box-shadow: inset 5px 5px 10px #681b50, inset -5px -5px 10px #f43fba; }
+
+.digits {
+  background-color: #c954a4;
+  box-shadow: 5px 5px 10px #652a52, -5px -5px 10px #ff7ef6; }
+  .digits:active {
+    box-shadow: inset 5px 5px 10px #83376b, inset -5px -5px 10px #ff71dd; }
+
+.operator {
+  color: #f5f5f5;
+  background-color: #ae2d85;
+  box-shadow: 5px 5px 10px #681b50, -5px -5px 10px #f43fba; }
+  .operator:active {
+    box-shadow: inset 5px 5px 10px #681b50, inset -5px -5px 10px #f43fba; }
