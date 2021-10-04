@@ -65,15 +65,19 @@ body {
 
 .btn {
   padding: 2rem 1rem;
+  margin: 1.5rem;
   font-size: 2.5rem;
   color: #fff;
   font-weight: 500;
   outline: none;
   border: none;
   border-radius: 1.5rem;
-  margin: 1.5rem;
   transition: 0.2s ease-in;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .btn--1 {
     grid-area: one; }
   .btn--2 {
