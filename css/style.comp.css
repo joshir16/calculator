@@ -40,8 +40,8 @@ body {
 .container {
   max-width: 50rem;
   width: 100%;
-  padding: 2rem;
-  border-radius: 3rem;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
   box-shadow: 5px 5px 10px #877474, -5px -5px 10px #ffffff; }
 
 .display {
@@ -50,7 +50,6 @@ body {
   background-color: #793262;
   box-shadow: inset 7px 7px 14px #552345, inset -7px -7px 14px #9d417f;
   color: #f5f5f5;
-  margin: 1rem;
   margin-bottom: 3rem; }
   .display__text {
     font-size: 2.75rem;
@@ -61,11 +60,11 @@ body {
 .box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "plus subtract multiply divide" "seven eight nine clear" "four five six backspace" "one two three equal" "d-zero zero decimal equal"; }
+  grid-template-areas: "plus subtract multiply divide" "seven eight nine clear" "four five six backspace" "one two three equal" "bracket zero decimal equal";
+  gap: 3rem; }
 
 .btn {
   padding: 2rem 1rem;
-  margin: 1.5rem;
   font-size: 2.5rem;
   color: #fff;
   font-weight: 500;
@@ -98,8 +97,8 @@ body {
     grid-area: nine; }
   .btn--0 {
     grid-area: zero; }
-  .btn--00 {
-    grid-area: d-zero; }
+  .btn--bracket {
+    grid-area: bracket; }
   .btn--decimal {
     grid-area: decimal; }
   .btn--plus {
@@ -114,7 +113,7 @@ body {
     grid-area: equal; }
   .btn--clear {
     grid-area: clear; }
-  .btn--clear {
+  .btn--backspace {
     grid-area: backspace; }
 
 .digits {

@@ -4,9 +4,9 @@
   max-width: 50rem;
   width: 100%;
 
-  padding: 2rem;
+  padding: 3rem 2rem;
 
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   box-shadow: 5px 5px 10px #877474, -5px -5px 10px #ffffff;
 }
 
@@ -18,7 +18,6 @@
   box-shadow: inset 7px 7px 14px #552345, inset -7px -7px 14px #9d417f;
   color: #f5f5f5;
 
-  margin: 1rem;
   margin-bottom: 3rem;
 
   &__text {
@@ -34,18 +33,17 @@
 .box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   grid-template-areas:
     "plus subtract multiply divide"
     "seven eight nine clear"
     "four five six backspace"
     "one two three equal"
-    "d-zero zero decimal equal";
+    "bracket zero decimal equal";
+  gap: 3rem;
 }
 
 .btn {
   padding: 2rem 1rem;
-  margin: 1.5rem;
 
   font-size: 2.5rem;
   color: #fff;
@@ -93,8 +91,8 @@
   &--0 {
     grid-area: zero;
   }
-  &--00 {
-    grid-area: d-zero;
+  &--bracket {
+    grid-area: bracket;
   }
 
   &--decimal {
@@ -124,7 +122,7 @@
     grid-area: clear;
   }
 
-  &--clear {
+  &--backspace {
     grid-area: backspace;
   }
 }
